@@ -20,7 +20,7 @@
 							<h2>리뷰남기기</h2><hr>
 						</div>
 						<div align="center">
-							<form action="/JSP_PROJECT/board/mypage/writeReviewProc.jsp">
+							<form action="<%=request.getContextPath() %>/board/mypage/writeReviewProc.jsp">
 								<textarea name="content" id="" cols="90" rows="20" placeholder="수업 후기를 남겨주세요."></textarea>
 						</div>
 						<div>

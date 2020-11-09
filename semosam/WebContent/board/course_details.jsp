@@ -123,12 +123,12 @@
 			<div class="col-xl-5 col-lg-5">
 				<div class="courses_sidebar">
 					<div class="video_thumb">
-						<img src="/JSP_PROJECT/uploadFile/1.jpg" alt="">
+						<img src="<%=request.getContextPath() %>/uploadFile/1.jpg" alt="">
 					</div>
 					<div class="author_info" style="margin-top: 100px;">
 						<div class="auhor_header">
 							<div class="thumb">
-								<img src="/JSP_PROJECT/uploadFile/4.jpg" alt="" height="90" width="90" style="border-radius: 100%;" >
+								<img src="<%=request.getContextPath() %>/uploadFile/4.jpg" alt="" height="90" width="90" style="border-radius: 100%;" >
 							</div>
 							<div class="name">
 								<h3>누구누구 쌤</h3>
@@ -145,7 +145,7 @@
 							</a></li>
 						</ul>
 					</div>
-					<a href="/JSP_PROJECT/board/course/courseSubmit.jsp" class="boxed_btn">수업 신청하기</a>
+					<a href="<%=request.getContextPath() %>/board/course/courseSubmit.jsp" class="boxed_btn">수업 신청하기</a>
 					<div class="feedback_info">
 						<h3>리뷰남기기<br>(수업신청한 학생만 남길 수 있음)</h3>
 						<p>별점을 선택하세요</p>

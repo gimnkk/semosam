@@ -9,7 +9,7 @@
 			<div class="row align-items-center justify-content-center">
 				<div class="col-xl-6 col-md-6">
 					<div class="illastrator_png">
-						<img src="/JSP_PROJECT/edumark/img/banner/edu_ilastration.png" alt="">
+						<img src="<%=request.getContextPath() %>/img/banner/edu_ilastration.png" alt="">
 					</div>
 				</div>
 				<div class="col-xl-6 col-md-6">
@@ -19,7 +19,7 @@
 						</h3>
 
 						<div class="search">
-							<form action="/JSP_PROJECT/board/course/courses.jsp" method="get">
+							<form action="<%=request.getContextPath() %>/board/course/courses.jsp" method="get">
 								<input type="search" name="search" id="search" placeholder="나를 위한 선생님 찾으러가기">
 								<button type="submit">
 									<i class="fa fa-search"></i>

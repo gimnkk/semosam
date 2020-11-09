@@ -47,7 +47,7 @@
 		String location = "document.referrer";
 		if (resultC) {
 			msg = "수업등록을 하였습니다.";
-			location = "/JSP_PROJECT/board/scheduleRegister.jsp";
+			location = "<%=request.getContextPath() %>/board/scheduleRegister.jsp";
 		}
 	%>
 	<script type="text/javascript">

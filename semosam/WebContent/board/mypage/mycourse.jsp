@@ -59,7 +59,7 @@
 							<div class="single_courses">
 								<!-- 수업 이미지 -->
 								<div class="thumb">
-									<a href="/JSP_PROJECT/board/mypage/mycourseContent.jsp?coursenum=<%=dto.getCoursenum()%>">
+									<a href="<%=request.getContextPath() %>/board/mypage/mycourseContent.jsp?coursenum=<%=dto.getCoursenum()%>">
 										<img src="<%=request.getContextPath()%>/uploadFile/<%=dto.getCourseimage()%>">
 									</a>
 								</div>
@@ -67,7 +67,7 @@
 								<div class="courses_info">
 									<span><%=dto.getCategory()%> [<%=dto.getDifficulty()%>]</span>
 									<h3>
-										<a href="/JSP_PROJECT/board/mypage/mycourseContent.jsp?coursenum=<%=dto.getCoursenum()%>">
+										<a href="<%=request.getContextPath() %>/board/mypage/mycourseContent.jsp?coursenum=<%=dto.getCoursenum()%>">
 											<%=dto.getTitle()%><br />
 										</a>
 									</h3>

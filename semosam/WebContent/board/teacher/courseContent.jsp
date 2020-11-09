@@ -18,7 +18,7 @@
 		</div>
 		<div class="row">
 			<div class="col-xl-8 col-lg-8 col-md-8" id="teacherSingup">
-				<form name="courseUpdateForm" action="/JSP_PROJECT/board/teacher/courseUpdate.jsp" method="post">
+				<form name="courseUpdateForm" action="<%=request.getContextPath() %>/board/teacher/courseUpdate.jsp" method="post">
 					<div id="course">
 						<h3 class="mb-30"><br>수업 정보</h3>
 						<div class="mt-10">
@@ -92,7 +92,7 @@
 					</div>
 					<input type="hidden" name="coursenum" value="<%=dto.getCoursenum()%>">
 					<button type="submit" class="boxed_btn_orange">수업변경</button>
-					<button type="button" class="boxed_btn" onclick="window.location='/JSP_PROJECT/board/teacher/courseDeleteProc.jsp?coursenum=<%=dto.getCoursenum()%>'">수업삭제</button>
+					<button type="button" class="boxed_btn" onclick="window.location='<%=request.getContextPath() %>/board/teacher/courseDeleteProc.jsp?coursenum=<%=dto.getCoursenum()%>'">수업삭제</button>
 				</form>
 			</div>
 		</div>

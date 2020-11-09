@@ -15,7 +15,7 @@
 %>
 	<script language="JavaScript">
 		alert("È¸¿øÅ»Åð µÇ¾ú½À´Ï´Ù.");
-		location.href = "/JSP_PROJECT/board/index.jsp";
+		location.href = "<%=request.getContextPath() %>/board/index.jsp";
 	</script>
 <%		
 		

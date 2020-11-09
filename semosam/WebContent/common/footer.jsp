@@ -9,7 +9,7 @@
 				<div class="col-xl-4 col-md-6 col-lg-4">
 					<div class="footer_widget">
 						<div class="footer_logo">
-							<a href="#"> <img src="/JSP_PROJECT/img/logo.png" alt="">
+							<a href="#"> <img src="<%=request.getContextPath() %>/img/logo.png" alt="">
 							</a>
 						</div>
 						<!-- <p>Firmament morning sixth subdue darkness creeping gathered divide our let god moving.
@@ -49,8 +49,8 @@
 					<div class="footer_widget">
 						<h3 class="footer_title">세모쌤</h3>
 						<ul>
-							<li><a href="/JSP_PROJECT/board/service/introduce.jsp">소개</a></li>
-							<li><a href="/JSP_PROJECT/board/service/center.jsp">세모쌤센터</a></li>
+							<li><a href="<%=request.getContextPath() %>/board/service/introduce.jsp">소개</a></li>
+							<li><a href="<%=request.getContextPath() %>/board/service/center.jsp">세모쌤센터</a></li>
 						</ul>
 					</div>
 				</div>
@@ -59,8 +59,8 @@
 					<div class="footer_widget">
 						<h3 class="footer_title">고객센터</h3>
 						<ul>
-							<li><a href="/JSP_PROJECT/board/service/notice.jsp"> 공지사항</a></li>
-							<li><a href="/JSP_PROJECT/board/service/qna.jsp"> Q&A</a></li>
+							<li><a href="<%=request.getContextPath() %>/board/service/notice.jsp"> 공지사항</a></li>
+							<li><a href="<%=request.getContextPath() %>/board/service/qna.jsp"> Q&A</a></li>
 						</ul>
 					</div>
 				</div>

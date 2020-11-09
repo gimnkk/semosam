@@ -67,7 +67,7 @@ ArrayList<reviewDTO> reviewList = rDao.getReviews(coursenum);
 									</tr>
 								</table>
 								<input type="button" value="수강 취소하기" style="margin-top: 100px;"
-									OnClick="window.location='/JSP_PROJECT/board/mypage/mycourseDelete.jsp?coursenum=<%=coursenum%>'"
+									OnClick="window.location='<%=request.getContextPath() %>/board/mypage/mycourseDelete.jsp?coursenum=<%=coursenum%>'"
 									class="genric-btn primary e-large circle">
 							</div>
 						</div>
@@ -194,7 +194,7 @@ ArrayList<reviewDTO> reviewList = rDao.getReviews(coursenum);
 							alt="">
 					</div>
 					<input type="button" value="리뷰 남기기" style="margin-top: 100px;"
-						OnClick="window.location='/JSP_PROJECT/board/mypage/writeReview.jsp?coursenum=<%=coursenum%>'"
+						OnClick="window.location='<%=request.getContextPath() %>/board/mypage/writeReview.jsp?coursenum=<%=coursenum%>'"
 						class="boxed_btn">
 					<!-- 
 					<div class="feedback_info">

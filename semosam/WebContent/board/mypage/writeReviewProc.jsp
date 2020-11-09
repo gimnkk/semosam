@@ -12,7 +12,7 @@
 	
 			
 	String msg = "리뷰 작성에 실패하였습니다.";
-	String location = "/JSP_PROJECT/board/mypage/wishlist.jsp";
+	String location = "<%=request.getContextPath() %>/board/mypage/wishlist.jsp";
 
 	if (result == 1) {
 		msg = "리뷰가 작성되었습니다.";

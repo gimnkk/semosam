@@ -9,7 +9,7 @@
 	int result = Adao.deleteMyCourses(coursenum, serial);
 	
 	String msg="수강 취소에 실패하였습니다.";
-	String location = "/JSP_PROJECT/board/mypage/mycourse.jsp";
+	String location = "<%=request.getContextPath() %>/board/mypage/mycourse.jsp";
 	
 	if(result==1){
 		msg="수강 취소되었습니다.";

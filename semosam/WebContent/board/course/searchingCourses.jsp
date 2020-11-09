@@ -28,7 +28,7 @@
 					<h3>수업 검색</h3>
 				</div>
 				<div class="search" align="center" style="margin-bottom: 50px;">
-					<form action="/JSP_PROJECT/board/course/searchingCourses.jsp" method="get">
+					<form action="<%=request.getContextPath() %>/board/course/searchingCourses.jsp" method="get">
 						<input type="search" name="search" id="search"
 							placeholder="검색어를 입력하세요" style="background-color: #F6F6F6;">
 						<button type="submit">
@@ -120,7 +120,7 @@
 							<div class="single_courses">
 								<!-- 수업 이미지 -->
 								<div class="thumb">
-									<a href="/JSP_PROJECT/board/course/course_details.jsp?coursenum=<%=course.getCoursenum()%>">
+									<a href="<%=request.getContextPath() %>/board/course/course_details.jsp?coursenum=<%=course.getCoursenum()%>">
 									<img src="<%=request.getContextPath() %>/uploadFile/<%=course.getCourseimage() %>">
 									</a>
 								</div>
@@ -128,7 +128,7 @@
 								<div class="courses_info">
 									<span><%=course.getCategory() %> [<%=course.getDifficulty() %>]</span>
 									<h3>
-										<a href="/JSP_PROJECT/board/course/course_details.jsp?coursenum=<%=course.getCoursenum()%>">
+										<a href="<%=request.getContextPath() %>/board/course/course_details.jsp?coursenum=<%=course.getCoursenum()%>">
 										<%=course.getTitle() %>
 										</a>
 									</h3>
@@ -171,7 +171,7 @@
 							<div class="single_courses">
 								<!-- 수업 이미지 -->
 								<div class="thumb">
-									<a href="/JSP_PROJECT/board/course/course_details.jsp?coursenum=<%=course.getCoursenum()%>">
+									<a href="<%=request.getContextPath() %>/board/course/course_details.jsp?coursenum=<%=course.getCoursenum()%>">
 									<img src="<%=request.getContextPath() %>/uploadFile/<%=course.getCourseimage() %>">
 									</a>
 								</div>
@@ -179,7 +179,7 @@
 								<div class="courses_info">
 									<span><%=course.getCategory() %> [<%=course.getDifficulty() %>]</span>
 									<h3>
-										<a href="/JSP_PROJECT/board/course/course_details.jsp?coursenum=<%=course.getCoursenum()%>">
+										<a href="<%=request.getContextPath() %>/board/course/course_details.jsp?coursenum=<%=course.getCoursenum()%>">
 										<%=course.getTitle() %>
 										</a>
 									</h3>
@@ -229,7 +229,7 @@
 							<div class="single_courses">
 								<!-- 수업 이미지 -->
 								<div class="thumb">
-									<a href="/JSP_PROJECT/board/course/course_details.jsp?coursenum=<%=course.getCoursenum()%>">
+									<a href="<%=request.getContextPath() %>/board/course/course_details.jsp?coursenum=<%=course.getCoursenum()%>">
 									<img src="<%=request.getContextPath() %>/uploadFile/<%=course.getCourseimage() %>">
 									</a>
 								</div>
@@ -237,7 +237,7 @@
 								<div class="courses_info">
 									<span><%=course.getCategory() %> [<%=course.getDifficulty() %>]</span>
 									<h3>
-										<a href="/JSP_PROJECT/board/course/course_details.jsp?coursenum=<%=course.getCoursenum()%>">
+										<a href="<%=request.getContextPath() %>/board/course/course_details.jsp?coursenum=<%=course.getCoursenum()%>">
 										<%=course.getTitle() %>
 										</a>
 									</h3>
@@ -286,7 +286,7 @@
 							<div class="single_courses">
 								<!-- 수업 이미지 -->
 								<div class="thumb">
-									<a href="/JSP_PROJECT/board/course/course_details.jsp?coursenum=<%=course.getCoursenum()%>">
+									<a href="<%=request.getContextPath() %>/board/course/course_details.jsp?coursenum=<%=course.getCoursenum()%>">
 									<img src="<%=request.getContextPath() %>/uploadFile/<%=course.getCourseimage() %>">
 									</a>
 								</div>
@@ -294,7 +294,7 @@
 								<div class="courses_info">
 									<span><%=course.getCategory() %> [<%=course.getDifficulty() %>]</span>
 									<h3>
-										<a href="/JSP_PROJECT/board/course/course_details.jsp?coursenum=<%=course.getCoursenum()%>">
+										<a href="<%=request.getContextPath() %>/board/course/course_details.jsp?coursenum=<%=course.getCoursenum()%>">
 										<%=course.getTitle() %>
 										</a>
 									</h3>
@@ -343,7 +343,7 @@
 							<div class="single_courses">
 								<!-- 수업 이미지 -->
 								<div class="thumb">
-									<a href="/JSP_PROJECT/board/course/course_details.jsp?coursenum=<%=course.getCoursenum()%>">
+									<a href="<%=request.getContextPath() %>/board/course/course_details.jsp?coursenum=<%=course.getCoursenum()%>">
 									<img src="<%=request.getContextPath() %>/uploadFile/<%=course.getCourseimage() %>">
 									</a>
 								</div>
@@ -351,7 +351,7 @@
 								<div class="courses_info">
 									<span><%=course.getCategory() %> [<%=course.getDifficulty() %>]</span>
 									<h3>
-										<a href="/JSP_PROJECT/board/course/course_details.jsp?coursenum=<%=course.getCoursenum()%>">
+										<a href="<%=request.getContextPath() %>/board/course/course_details.jsp?coursenum=<%=course.getCoursenum()%>">
 										<%=course.getTitle() %>
 										</a>
 									</h3>
@@ -400,7 +400,7 @@
 							<div class="single_courses">
 								<!-- 수업 이미지 -->
 								<div class="thumb">
-									<a href="/JSP_PROJECT/board/course/course_details.jsp?coursenum=<%=course.getCoursenum()%>">
+									<a href="<%=request.getContextPath() %>/board/course/course_details.jsp?coursenum=<%=course.getCoursenum()%>">
 									<img src="<%=request.getContextPath() %>/uploadFile/<%=course.getCourseimage() %>">
 									</a>
 								</div>
@@ -408,7 +408,7 @@
 								<div class="courses_info">
 									<span><%=course.getCategory() %> [<%=course.getDifficulty() %>]</span>
 									<h3>
-										<a href="/JSP_PROJECT/board/course/course_details.jsp?coursenum=<%=course.getCoursenum()%>">
+										<a href="<%=request.getContextPath() %>/board/course/course_details.jsp?coursenum=<%=course.getCoursenum()%>">
 										<%=course.getTitle() %>
 										</a>
 									</h3>
@@ -457,7 +457,7 @@
 							<div class="single_courses">
 								<!-- 수업 이미지 -->
 								<div class="thumb">
-									<a href="/JSP_PROJECT/board/course/course_details.jsp?coursenum=<%=course.getCoursenum()%>">
+									<a href="<%=request.getContextPath() %>/board/course/course_details.jsp?coursenum=<%=course.getCoursenum()%>">
 									<img src="<%=request.getContextPath() %>/uploadFile/<%=course.getCourseimage() %>">
 									</a>
 								</div>
@@ -465,7 +465,7 @@
 								<div class="courses_info">
 									<span><%=course.getCategory() %> [<%=course.getDifficulty() %>]</span>
 									<h3>
-										<a href="/JSP_PROJECT/board/course/course_details.jsp?coursenum=<%=course.getCoursenum()%>">
+										<a href="<%=request.getContextPath() %>/board/course/course_details.jsp?coursenum=<%=course.getCoursenum()%>">
 										<%=course.getTitle() %>
 										</a>
 									</h3>
@@ -514,7 +514,7 @@
 							<div class="single_courses">
 								<!-- 수업 이미지 -->
 								<div class="thumb">
-									<a href="/JSP_PROJECT/board/course/course_details.jsp?coursenum=<%=course.getCoursenum()%>">
+									<a href="<%=request.getContextPath() %>/board/course/course_details.jsp?coursenum=<%=course.getCoursenum()%>">
 									<img src="<%=request.getContextPath() %>/uploadFile/<%=course.getCourseimage() %>">
 									</a>
 								</div>
@@ -522,7 +522,7 @@
 								<div class="courses_info">
 									<span><%=course.getCategory() %> [<%=course.getDifficulty() %>]</span>
 									<h3>
-										<a href="/JSP_PROJECT/board/course/course_details.jsp?coursenum=<%=course.getCoursenum()%>">
+										<a href="<%=request.getContextPath() %>/board/course/course_details.jsp?coursenum=<%=course.getCoursenum()%>">
 										<%=course.getTitle() %>
 										</a>
 									</h3>
@@ -571,7 +571,7 @@
 							<div class="single_courses">
 								<!-- 수업 이미지 -->
 								<div class="thumb">
-									<a href="/JSP_PROJECT/board/course/course_details.jsp?coursenum=<%=course.getCoursenum()%>">
+									<a href="<%=request.getContextPath() %>/board/course/course_details.jsp?coursenum=<%=course.getCoursenum()%>">
 									<img src="<%=request.getContextPath() %>/uploadFile/<%=course.getCourseimage() %>">
 									</a>
 								</div>
@@ -579,7 +579,7 @@
 								<div class="courses_info">
 									<span><%=course.getCategory() %> [<%=course.getDifficulty() %>]</span>
 									<h3>
-										<a href="/JSP_PROJECT/board/course/course_details.jsp?coursenum=<%=course.getCoursenum()%>">
+										<a href="<%=request.getContextPath() %>/board/course/course_details.jsp?coursenum=<%=course.getCoursenum()%>">
 										<%=course.getTitle() %>
 										</a>
 									</h3>

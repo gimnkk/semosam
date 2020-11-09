@@ -6,7 +6,7 @@ $("#pwdCheckAlertDanger").hide();
 function idCheck() {
    var email = $("#email").val();
 
-   var emailRule = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;// ÀÌ¸ÞÀÏÁ¤±Ô½Ä
+   var emailRule = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;// ï¿½Ì¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô½ï¿½
    var idcheck = document.getElementById("idcheck");
    if (email.match(emailRule) == null) {
       $("#idcheck").hide();
@@ -31,7 +31,7 @@ function idCheckOfServer(email) {
       }
    }
    var params = "?email=" + encodeURIComponent(email);
-   xhttp.open("GET", "/JSP_PROJECT/nohead/idCheck.jsp" + params);
+   xhttp.open("GET", "<%=request.getContextPath() %>/nohead/idCheck.jsp" + params);
    xhttp.send();
 }
 

@@ -10,7 +10,7 @@
 	int result = daoS.deleteSchedule(courseNum, serial);
 	
 	String msg = "일정삭제에 실패 하였습니다.";
-	String location = "/JSP_PROJECT/board/teacher/scheduleContent.jsp?coursenum=" + courseNum;
+	String location = "<%=request.getContextPath() %>/board/teacher/scheduleContent.jsp?coursenum=" + courseNum;
 
 	if (result == 1) {
 		msg = "일정이 삭제되었습니다.";

@@ -18,21 +18,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- <link rel="manifest" href="site.webmanifest"> -->
-<link rel="shortcut icon" type="image/x-icon" href="/JSP_PROJECT/favicon.ico">
+<link rel="shortcut icon" type="image/x-icon" href="<%=request.getContextPath() %>/favicon.ico">
 <!-- Place favicon.ico in the root directory -->
 
 <!-- CSS here -->
-<link rel="stylesheet" href="/JSP_PROJECT/css/bootstrap.min.css">
-<link rel="stylesheet" href="/JSP_PROJECT/css/owl.carousel.min.css">
-<link rel="stylesheet" href="/JSP_PROJECT/css/magnific-popup.css">
-<link rel="stylesheet" href="/JSP_PROJECT/css/font-awesome.min.css">
-<link rel="stylesheet" href="/JSP_PROJECT/css/themify-icons.css">
-<link rel="stylesheet" href="/JSP_PROJECT/css/nice-select.css">
-<link rel="stylesheet" href="/JSP_PROJECT/css/flaticon.css">
-<link rel="stylesheet" href="/JSP_PROJECT/css/gijgo.css">
-<link rel="stylesheet" href="/JSP_PROJECT/css/animate.css">
-<link rel="stylesheet" href="/JSP_PROJECT/css/slicknav.css">
-<link rel="stylesheet" href="/JSP_PROJECT/css/style.css">
+<link rel="stylesheet" href="<%=request.getContextPath() %>/css/bootstrap.min.css">
+<link rel="stylesheet" href="<%=request.getContextPath() %>/css/owl.carousel.min.css">
+<link rel="stylesheet" href="<%=request.getContextPath() %>/css/magnific-popup.css">
+<link rel="stylesheet" href="<%=request.getContextPath() %>/css/font-awesome.min.css">
+<link rel="stylesheet" href="<%=request.getContextPath() %>/css/themify-icons.css">
+<link rel="stylesheet" href="<%=request.getContextPath() %>/css/nice-select.css">
+<link rel="stylesheet" href="<%=request.getContextPath() %>/css/flaticon.css">
+<link rel="stylesheet" href="<%=request.getContextPath() %>/css/gijgo.css">
+<link rel="stylesheet" href="<%=request.getContextPath() %>/css/animate.css">
+<link rel="stylesheet" href="<%=request.getContextPath() %>/css/slicknav.css">
+<link rel="stylesheet" href="<%=request.getContextPath() %>/css/style.css">
 <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap"
 	rel="stylesheet">
@@ -58,16 +58,16 @@
 						<div class="main-menu  d-none d-lg-block">
 							<nav>
 								<ul id="navigation">
-									<li><a href="/JSP_PROJECT/board/index.jsp">메인</a></li>
-									<li><a href="/JSP_PROJECT/board/course/courses.jsp">수업</a></li>
+									<li><a href="<%=request.getContextPath() %>/board/index.jsp">메인</a></li>
+									<li><a href="<%=request.getContextPath() %>/board/course/courses.jsp">수업</a></li>
 									<%
 										if (teacher) {
 									%>
 
-									<li><a href="/JSP_PROJECT/board/teacher/teacherContent.jsp">선생님<i class="ti-angle-down"></i></a>
+									<li><a href="<%=request.getContextPath() %>/board/teacher/teacherContent.jsp">선생님<i class="ti-angle-down"></i></a>
 										<ul class="submenu">
-											<li><a href="/JSP_PROJECT/board/teacher/courseRegister.jsp">수업등록</a></li>
-											<li><a href="/JSP_PROJECT/board/teacher/teacherContent.jsp">수업 조회</a></li>
+											<li><a href="<%=request.getContextPath() %>/board/teacher/courseRegister.jsp">수업등록</a></li>
+											<li><a href="<%=request.getContextPath() %>/board/teacher/teacherContent.jsp">수업 조회</a></li>
 											<!-- 수업 조회 안에 신청자 조회/스케쥴등록/수업변경/수업삭제 있음 -->
 										</ul></li>
 									<%
@@ -76,20 +76,20 @@
 									<%
 										if (id != null) {
 									%>
-									<li><a href="/JSP_PROJECT/board/mypage/myprofile.jsp">마이페이지<i class="ti-angle-down"></i></a>
+									<li><a href="<%=request.getContextPath() %>/board/mypage/myprofile.jsp">마이페이지<i class="ti-angle-down"></i></a>
 										<ul class="submenu">
-											<li><a href="/JSP_PROJECT/board/mypage/myprofile.jsp">회원정보</a></li>
-											<li><a href="/JSP_PROJECT/board/mypage/mycourse.jsp">수강목록</a></li>
-											<li><a href="/JSP_PROJECT/board/mypage/wishlist.jsp">찜목록</a></li>
+											<li><a href="<%=request.getContextPath() %>/board/mypage/myprofile.jsp">회원정보</a></li>
+											<li><a href="<%=request.getContextPath() %>/board/mypage/mycourse.jsp">수강목록</a></li>
+											<li><a href="<%=request.getContextPath() %>/board/mypage/wishlist.jsp">찜목록</a></li>
 
 										</ul></li>
 									<%
 										}
 									%>
-									<li><a href="/JSP_PROJECT/board/service/notice.jsp">고객센터<i class="ti-angle-down"></i></a>
+									<li><a href="<%=request.getContextPath() %>/board/service/notice.jsp">고객센터<i class="ti-angle-down"></i></a>
 										<ul class="submenu">
-											<li><a href="/JSP_PROJECT/board/service/notice.jsp">공지사항</a></li>
-											<li><a href="/JSP_PROJECT/board/service/qna.jsp">Q&A</a></li>
+											<li><a href="<%=request.getContextPath() %>/board/service/notice.jsp">공지사항</a></li>
+											<li><a href="<%=request.getContextPath() %>/board/service/qna.jsp">Q&A</a></li>
 
 										</ul></li>
 								</ul>
@@ -102,7 +102,7 @@
 								if (!teacher && id != null) {
 							%>
 
-							<a href="/JSP_PROJECT/board/teacher/teacherSingup.jsp" class="login"> <i
+							<a href="<%=request.getContextPath() %>/board/teacher/teacherSingup.jsp" class="login"> <i
 								class="flaticon-user"></i> <span>쌤등록</span>
 							</a>
 							<%
@@ -111,7 +111,7 @@
 							<%
 								if (id != null) {
 							%>
-							<a href="/JSP_PROJECT/nohead/logoutProc.jsp" class="genric-btn danger circle"> <!-- <i class="fa fa-phone"></i> -->
+							<a href="<%=request.getContextPath() %>/nohead/logoutProc.jsp" class="genric-btn danger circle"> <!-- <i class="fa fa-phone"></i> -->
 								<span>로그아웃</span>
 							</a>
 							<%
@@ -138,7 +138,7 @@
 
 
 <!-- 로그인폼 -->
-<form id="test-form" class="white-popup-block mfp-hide" action="/JSP_PROJECT/nohead/loginProc.jsp"
+<form id="test-form" class="white-popup-block mfp-hide" action="<%=request.getContextPath() %>/nohead/loginProc.jsp"
 	method="post">
 	<div class="popup_box ">
 		<div class="popup_inner">
@@ -169,7 +169,7 @@
 <!-- form itself end -->
 
 <!-- 회원가입 폼 -->
-<form id="test-form2" class="white-popup-block mfp-hide" action="/JSP_PROJECT/nohead/signupProc.jsp"
+<form id="test-form2" class="white-popup-block mfp-hide" action="<%=request.getContextPath() %>/nohead/signupProc.jsp"
 	name="regForm" method="post">
 	<div class="popup_box">
 		<div class="popup_inner">
@@ -281,31 +281,31 @@
 
 
 <!-- JS here -->
-<script src="/JSP_PROJECT/js/vendor/modernizr-3.5.0.min.js"></script>
-<script src="/JSP_PROJECT/js/vendor/jquery-1.12.4.min.js"></script>
-<script src="/JSP_PROJECT/js/popper.min.js"></script>
-<script src="/JSP_PROJECT/js/bootstrap.min.js"></script>
-<script src="/JSP_PROJECT/js/owl.carousel.min.js"></script>
-<script src="/JSP_PROJECT/js/isotope.pkgd.min.js"></script>
-<script src="/JSP_PROJECT/js/ajax-form.js"></script>
-<script src="/JSP_PROJECT/js/waypoints.min.js"></script>
-<script src="/JSP_PROJECT/js/jquery.counterup.min.js"></script>
-<script src="/JSP_PROJECT/js/imagesloaded.pkgd.min.js"></script>
-<script src="/JSP_PROJECT/js/scrollIt.js"></script>
-<script src="/JSP_PROJECT/js/jquery.scrollUp.min.js"></script>
-<script src="/JSP_PROJECT/js/wow.min.js"></script>
-<script src="/JSP_PROJECT/js/nice-select.min.js"></script>
-<script src="/JSP_PROJECT/js/jquery.slicknav.min.js"></script>
-<script src="/JSP_PROJECT/js/jquery.magnific-popup.min.js"></script>
-<script src="/JSP_PROJECT/js/plugins.js"></script>
-<script src="/JSP_PROJECT/js/gijgo.min.js"></script>
-<script src="/JSP_PROJECT/js/reg.js"></script>
+<script src="<%=request.getContextPath() %>/js/vendor/modernizr-3.5.0.min.js"></script>
+<script src="<%=request.getContextPath() %>/js/vendor/jquery-1.12.4.min.js"></script>
+<script src="<%=request.getContextPath() %>/js/popper.min.js"></script>
+<script src="<%=request.getContextPath() %>/js/bootstrap.min.js"></script>
+<script src="<%=request.getContextPath() %>/js/owl.carousel.min.js"></script>
+<script src="<%=request.getContextPath() %>/js/isotope.pkgd.min.js"></script>
+<script src="<%=request.getContextPath() %>/js/ajax-form.js"></script>
+<script src="<%=request.getContextPath() %>/js/waypoints.min.js"></script>
+<script src="<%=request.getContextPath() %>/js/jquery.counterup.min.js"></script>
+<script src="<%=request.getContextPath() %>/js/imagesloaded.pkgd.min.js"></script>
+<script src="<%=request.getContextPath() %>/js/scrollIt.js"></script>
+<script src="<%=request.getContextPath() %>/js/jquery.scrollUp.min.js"></script>
+<script src="<%=request.getContextPath() %>/js/wow.min.js"></script>
+<script src="<%=request.getContextPath() %>/js/nice-select.min.js"></script>
+<script src="<%=request.getContextPath() %>/js/jquery.slicknav.min.js"></script>
+<script src="<%=request.getContextPath() %>/js/jquery.magnific-popup.min.js"></script>
+<script src="<%=request.getContextPath() %>/js/plugins.js"></script>
+<script src="<%=request.getContextPath() %>/js/gijgo.min.js"></script>
+<script src="<%=request.getContextPath() %>/js/reg.js"></script>
 
 <!--contact js-->
-<script src="/JSP_PROJECT/js/contact.js"></script>
-<script src="/JSP_PROJECT/js/jquery.ajaxchimp.min.js"></script>
-<script src="/JSP_PROJECT/js/jquery.form.js"></script>
-<script src="/JSP_PROJECT/js/jquery.validate.min.js"></script>
-<script src="/JSP_PROJECT/js/mail-script.js"></script>
+<script src="<%=request.getContextPath() %>/js/contact.js"></script>
+<script src="<%=request.getContextPath() %>/js/jquery.ajaxchimp.min.js"></script>
+<script src="<%=request.getContextPath() %>/js/jquery.form.js"></script>
+<script src="<%=request.getContextPath() %>/js/jquery.validate.min.js"></script>
+<script src="<%=request.getContextPath() %>/js/mail-script.js"></script>
 
-<script src="/JSP_PROJECT/js/main.js"></script>
+<script src="<%=request.getContextPath() %>/js/main.js"></script>

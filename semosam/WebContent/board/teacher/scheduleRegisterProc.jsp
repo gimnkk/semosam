@@ -21,7 +21,7 @@
 		String location = "javascript:history.back()";
 		if (result == 1) {
 			msg = "일정등록을 하였습니다.";
-			location = "/JSP_PROJECT/board/teacher/scheduleContent.jsp?coursenum=" + coursenum;
+			location = "<%=request.getContextPath() %>/board/teacher/scheduleContent.jsp?coursenum=" + coursenum;
 		}
 	%>
 	<script type="text/javascript">

@@ -8,7 +8,7 @@
 	int result = wDao.deleteWishlist(email, courseNum);
 			
 	String msg = "찜목록 제거를 실패하였습니다.";
-	String location = "/JSP_PROJECT/board/teacher/wishlist.jsp";
+	String location = "<%=request.getContextPath() %>/board/teacher/wishlist.jsp";
 
 	if (result == 1) {
 		msg = "찜목록이 삭제되었습니다.";

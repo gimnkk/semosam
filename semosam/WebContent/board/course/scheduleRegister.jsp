@@ -14,7 +14,7 @@
 					<input name="title" class="single-input">
 				</div>
 				<table class="mt-10">
-					<form action="/JSP_PROJECT/board/teacher/scheduleRegisterProc.jsp"
+					<form action="<%=request.getContextPath() %>/board/teacher/scheduleRegisterProc.jsp"
 						method="post">
 					<tr>
 						<td>³¯Â¥</td>

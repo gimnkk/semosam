@@ -18,7 +18,7 @@
 	<div class="container">
 		<div class="">
 			<div class="col-xl-8 col-lg-8 col-md-8" id="myprofile">
-				<form action="/JSP_PROJECT/board/mypage/myprofileProc.jsp" method="post">
+				<form action="<%=request.getContextPath() %>/board/mypage/myprofileProc.jsp" method="post">
 					<div id="myprofile">
 						<h3 class="mb-30">내정보</h3>
 						<div class="mt-10">
@@ -76,7 +76,7 @@
 					<button type="submit" value="프로필 수정" class="boxed_btn_orange">프로필 수정</button>
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 					<button type="button" value="회원 탈퇴" class="boxed_btn_orange" value="withdraw"
-						OnClick="window.location='/JSP_PROJECT/board/mypage/withdraw.jsp?email=<%=dto.getEmail()%>'"
+						OnClick="window.location='<%=request.getContextPath() %>/board/mypage/withdraw.jsp?email=<%=dto.getEmail()%>'"
 					>회원 탈퇴</button>
 				</form>
 			</div>

@@ -62,7 +62,7 @@ td {
 					<div class="outline_courses_info">
 					
 					<form name="applicantForm" method="get"
-					action="/JSP_PROJECT/board/course/courseSubmitProc.jsp" >
+					action="<%=request.getContextPath() %>/board/course/courseSubmitProc.jsp" >
 					
 					<input type="hidden" name="coursenum" value="<%=coursenum%>">
 					<table style="margin-top: 30px;	margin-left:30px;">

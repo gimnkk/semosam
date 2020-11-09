@@ -244,8 +244,8 @@
 							</a></li>
 						</ul>
 					</div>
-					<a href="/JSP_PROJECT/board/course/courseSubmit.jsp?coursenum=<%=coursenum %>" class="boxed_btn">수업 신청하기</a>
-					<button type="button" class="boxed_btn_orange" OnClick="window.location='/JSP_PROJECT/board/course/makingWish.jsp?memnum=<%=memnum%>&coursenum=<%=coursenum %>'">찜하기</button>
+					<a href="<%=request.getContextPath() %>/board/course/courseSubmit.jsp?coursenum=<%=coursenum %>" class="boxed_btn">수업 신청하기</a>
+					<button type="button" class="boxed_btn_orange" OnClick="window.location='<%=request.getContextPath() %>/board/course/makingWish.jsp?memnum=<%=memnum%>&coursenum=<%=coursenum %>'">찜하기</button>
 				</div>
 			</div>
 		</div>

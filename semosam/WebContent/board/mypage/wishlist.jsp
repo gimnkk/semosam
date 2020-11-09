@@ -59,7 +59,7 @@
 							<div class="single_courses">
 								<!-- 수업 이미지 -->
 								<div class="thumb">
-									<a href="/JSP_PROJECT/board/course/course_details.jsp?coursenum=<%=dto.getCoursenum()%>">
+									<a href="<%=request.getContextPath() %>/board/course/course_details.jsp?coursenum=<%=dto.getCoursenum()%>">
 										<img src="<%=request.getContextPath()%>/uploadFile/<%=dto.getCourseimage()%>">
 									</a>
 								</div>
@@ -67,7 +67,7 @@
 								<div class="courses_info">
 									<span><%=dto.getCategory()%> [<%=dto.getDifficulty()%>]</span>
 									<h3>
-										<a href="/JSP_PROJECT/board/course/course_details.jsp?coursenum=<%=dto.getCoursenum()%>">
+										<a href="<%=request.getContextPath() %>/board/course/course_details.jsp?coursenum=<%=dto.getCoursenum()%>">
 											<%=dto.getTitle()%>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 										<a href="<%=request.getContextPath()%>/board/teacher/wishlistDeleteProc.jsp?coursenum=" + <%=dto.getCoursenum()%>
 											class="genric-btn warning circle" >찜삭제</a>

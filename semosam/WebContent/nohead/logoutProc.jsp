@@ -5,5 +5,5 @@
 
 <script>
 	alert("로그아웃 되었습니다.");
-	location.href = "/JSP_PROJECT/board/index.jsp";
+	location.href = "<%=request.getContextPath() %>/board/index.jsp";
 </script>

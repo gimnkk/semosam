@@ -16,7 +16,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-xl-8 col-lg-8 col-md-8" id="withdraw">
-				<form action="/JSP_PROJECT/board/mypage/withdrawProc.jsp" method="post">
+				<form action="<%=request.getContextPath() %>/board/mypage/withdrawProc.jsp" method="post">
 					<div id="withdraw">
 						<h3 class="mb-30">È¸¿ø Å»Åð</h3>
 						<div class="mt-10">
@@ -28,7 +28,7 @@
 					<br />
 					<button type="submit" value="Å»ÅðÇÏ±â" class="boxed_btn_orange">Å»ÅðÇÏ±â</button>
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					<button type="button" value="µÚ·Î°¡±â"  class="boxed_btn_orange"OnClick="window.location='/JSP_PROJECT/board/mypage/myprofile.jsp'">
+					<button type="button" value="µÚ·Î°¡±â"  class="boxed_btn_orange"OnClick="window.location='<%=request.getContextPath() %>/board/mypage/myprofile.jsp'">
 						µÚ·Î°¡±â</button>
 				</form>
 			</div>
