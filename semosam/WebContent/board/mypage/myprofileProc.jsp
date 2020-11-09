@@ -7,7 +7,7 @@
 
 	boolean result = mdao.updateMember(dto);
 	String msg = "회원수정에 실패 하였습니다.";
-	String location = "<%=request.getContextPath() %>/board/mypage/myprofile.jsp";
+	String location = request.getContextPath()+"/board/mypage/myprofile.jsp";
 
 	if (result==true) {
 		msg = "회원수정에 성공 하였습니다.";

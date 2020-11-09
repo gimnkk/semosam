@@ -15,7 +15,7 @@
 		String location = "javascript:history.back()";
 		if (result == 1) {
 			msg = "찜목록에 추가되었습니다.";
-			location = "<%=request.getContextPath() %>/board/mypage/wishlist.jsp";
+			location = request.getContextPath()+"/board/mypage/wishlist.jsp";
 		}
 	%>
 	<script type="text/javascript">

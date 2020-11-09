@@ -8,7 +8,7 @@
 	int result = daoC.deleteCourse(courseNum);
 
 	String msg = "수업삭제에 실패 하였습니다.";
-	String location = "<%=request.getContextPath() %>/board/teacher/teacherContent.jsp";
+	String location = request.getContextPath()+"/board/teacher/teacherContent.jsp";
 
 	if (result == 1) {
 		msg = "수업이 삭제되었습니다.";

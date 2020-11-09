@@ -41,7 +41,7 @@
 		String location = "document.referrer";
 		if (resultT) {
 			msg = "쌤등록을 하였습니다.";
-			location = "<%=request.getContextPath() %>/board/index.jsp";
+			location = request.getContextPath()+"/board/index.jsp";
 		}
 	%>
 	<script type="text/javascript">
