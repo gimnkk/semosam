@@ -1,5 +1,15 @@
 # semosam
-Team project using jsp model1
+재능 공유 플랫폼
+- 기간 : 20. 08. 15 ~ 20. 09. 15
+- 팀원 : 4명
+
+&nbsp;&nbsp;&nbsp;
+
+# Technologies
+ - Java, JavaScript
+ - Oracle DB
+
+&nbsp;&nbsp;&nbsp;
 
 # DB Modeling
 ![image](semosamERD.png)
