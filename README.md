@@ -1,3 +1,5 @@
+![image](semosam.png)
+
 # semosam
 재능 공유 플랫폼
 - 기간 : 20. 08. 15 ~ 20. 08. 29
