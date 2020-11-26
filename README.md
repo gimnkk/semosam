@@ -4,6 +4,8 @@
 재능 공유 플랫폼
 - 기간 : 20. 08. 15 ~ 20. 08. 29
 - 팀원 : 4명
+- 개발툴 : eclipse IDE, Oracle sqldeveloper
+- 주제 : MVC model1 구조를 사용한 JSP 프로젝트
 
 &nbsp;&nbsp;&nbsp;
 
@@ -12,6 +14,13 @@
  - Oracle DB
 
 &nbsp;&nbsp;&nbsp;
+
+# Summary
+- 회원 CRUD, 기존 회원의 쌤등록
+- 수업 CRUD (쌤등록 후)
+- 수업일정 CRUD (수업 생성 후)
+- 수업 찜 CRUD
+- 수업 리뷰 CRUD
 
 # DB Modeling
 ![image](semosamERD.png)
